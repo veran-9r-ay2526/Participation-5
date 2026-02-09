@@ -1,0 +1,23 @@
+.container{
+    padding: 5px;
+    text-align: center;
+    background-color: #206680;
+    border: 3px solid black;
+    border-radius: 50px;
+    width: 1000px;
+    margin-top: 250px;
+}
+.containertwo{
+    text-align: center;
+    background-color: #bd5f42;
+    border: 1px solid black;
+    border-radius: 60px;
+    padding: 10px;
+}
+body{
+    background-image: url('https://preview.redd.it/sgootkk4de541.jpg?width=640&crop=smart&auto=webp&s=8a9d19cc596d7e011ad55da1e83dbe4e79484e76');
+    background-attachment: fixed;
+}
+h1{
+    color: white;
+}

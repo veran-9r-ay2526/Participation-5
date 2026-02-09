@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation 5: JS Functions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+    <div class="containertwo">
+    <h1>SUM OF TWO VARIABLES</h1>
+    <form>
+        <label> First Number: </label>
+            <input type="number" id="numba1" placeholder="Enter first number"><br><br>
+        <label> Second Number: </label>
+            <input type="number" id="numba2" placeholder="Enter second number"><br><br>
+        <p id="result"> The sum of two variables is: </p>
+
+        <button type="button" class="btn btn-warning" 
+        onclick="sum()">
+            Calculate
+        </button>
+          <button type="reset" class="btn btn-warning" onclick="location.reload()">REFRESH!</button>
+        </fieldset>
+    </form>
+    </div>
+    </div>
+
+<script>
+    function sum(){
+        let numerouno = Number(document.getElementById("numba1").value);
+        let numerodos = Number(document.getElementById("numba2").value);
+        let sagot = numerouno + numerodos;
+
+        document.getElementById("result").innerHTML =
+            "The sum of two variables is: " + sagot;
+    }
+</script>
+
+</body>
+</html>
